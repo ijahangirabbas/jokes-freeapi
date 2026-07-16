@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #fef3c7 0%, #fbcfe8 100%);
+  color: #3f2f2f;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+.app-shell {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  box-sizing: border-box;
+}
+
+.joke-card {
+  width: min(90vw, 520px);
+  background: linear-gradient(135deg, #ffffff 0%, #fff7ed 100%);
+  border-radius: 24px;
+  padding: 32px 28px;
+  box-shadow: 0 20px 50px rgba(107, 33, 168, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+
+.joke-card h1 {
+  margin: 0;
+  font-size: 2rem;
+  color: #6d28d9;
+}
+
+.joke-text {
+  margin: 0;
+  min-height: 90px;
+  font-size: 1.1rem;
+  line-height: 1.7;
+  color: #4b5563;
+}
+
+.new-joke-btn {
+  border: none;
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #8b5cf6, #ec4899);
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 8px 20px rgba(139, 92, 246, 0.25);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.new-joke-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 24px rgba(139, 92, 246, 0.35);
+}
+
+.new-joke-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+  transform: none;
+}
